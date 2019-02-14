@@ -1,0 +1,29 @@
+{
+  "name": "smorder_server",
+  "version": "1.0.0",
+  "description": "smorder server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shangyu-Li/smorder.git"
+  },
+  "keywords": [
+    "smorder"
+  ],
+  "author": "ShangieLi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shangyu-Li/smorder/issues"
+  },
+  "homepage": "https://github.com/Shangyu-Li/smorder#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.7"
+  }
+}
