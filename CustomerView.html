@@ -10,103 +10,109 @@
 </head>
 
 <body>
-	<form>
+	<form action="customer_submit" method="POST"> 
 		<div class="row form-group">
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="SoyJuice">豆漿</label>
-				<select class="custom-select" id="SoyTemperaSelect">
-					<option selected>溫</option>
+				<select class="custom-select" id="SoyTemperaSelect" name="SoyTemperaSelect">
+					<option selected>--</option>
 					<option value="1">冰</option>
 					<option value="2">溫</option>
 					<option value="3">熱</option>
 				</select>
-				<select class="custom-select" id="SoySizeSelect">
-					<option selected>小杯</option>
+				<select class="custom-select" id="SoySizeSelect" name="SoySizeSelect">
+					<option selected>大小</option>
 					<option value="1">大杯</option>
 					<option value="2">小杯</option>
 				</select>
-				<input type="number" class="form-control input-group-btn" id="SoyJuice" placeholder="0">
+				<input type="number" class="form-control input-group-btn" id="SoyJuice" name="SoyJuice" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="RiceJuice">米漿</label>
-				<select class="custom-select" id="RiceTemperaSelect">
-					<option selected>溫</option>
+				<select class="custom-select" id="RiceTemperaSelect" name="RiceTemperaSelect">
+					<option selected>--</option>
 					<option value="1">冰</option>
 					<option value="2">溫</option>
 					<option value="3">熱</option>
 				</select>
-				<select class="custom-select" id="RiceSizeSelect">
-					<option selected>小杯</option>
+				<select class="custom-select" id="RiceSizeSelect" name="RiceSizeSelect">
+					<option selected>大小</option>
 					<option value="1">大杯</option>
 					<option value="2">小杯</option>
 				</select>
-				<input type="number" class="form-control" id="RiceJuice" placeholder="0">
+				<input type="number" class="form-control" id="RiceJuice" name="RiceJuice" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="SaltySoyJuice">鹹豆漿</label>
-				<input type="number" class="form-control" id="SaltySoyJuice" placeholder="0">
+				<select class="custom-select" id="SalSoySizeSelect" name="SalSoySizeSelect">
+					<option selected>大小</option>
+					<option value="1">大杯</option>
+					<option value="2">小杯</option>
+				</select>
+				<input type="number" class="form-control" id="SaltySoyJuice" name="SaltySoyJuice" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="BlackTea">紅茶</label>
-				<input type="number" class="form-control" id="BlackTea" placeholder="0">
+				<input type="number" class="form-control" id="BlackTea" name="BlackTea" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="OvenRoll">燒餅</label>
-				<input type="number" class="form-control" id="OvenRoll" placeholder="0">
+				<input type="number" class="form-control" id="OvenRoll" name="OvenRoll" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="FiredBreadStick">油條</label>
-				<input type="number" class="form-control" id="FiredBreadStick" placeholder="0">
+				<input type="number" class="form-control" id="FiredBreadStick" name="FiredBreadStick" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="OvenRollFiredBreadStick">燒餅夾油條</label>
-				<input type="number" class="form-control" id="OvenRollFiredBreadStick" placeholder="0">
+				<input type="number" class="form-control" id="OvenRollFriedBreadStick" name="OvenRollFriedBreadStick" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="OvenRollEgg">燒餅夾蛋</label>
-				<input type="number" class="form-control" id="OvenRollEgg" placeholder="0">
+				<input type="number" class="form-control" id="OvenRollEgg" name="OvenRollEgg" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="OvenRollFiredBreadStickEgg">燒餅油條夾蛋</label>
-				<input type="number" class="form-control" id="OvenRollFiredBreadStickEgg" placeholder="0">
+				<input type="number" class="form-control" id="OvenRollFriedBreadStickEgg" name="OvenRollFriedBreadStickEgg" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="EggCake">蛋餅</label>
-				<input type="number" class="form-control" id="EggCake" placeholder="0">
+				<input type="number" class="form-control" id="EggCake" name="EggCake" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="EggCakeFriedBreadStick">蛋餅夾油條</label>
-				<input type="number" class="form-control" id="EggCakeFriedBreadStick" placeholder="0">
+				<input type="number" class="form-control" id="EggCakeFriedBreadStick" name="EggCakeFriedBreadStick" placeholder="0">
 			</div>
 			<div class="col-md-1 d-flex flex-column justify-content-between">
 				<label for="LeekDumpling">韭菜盒</label>
-				<input type="number" class="form-control" id="LeekDumpling" placeholder="0">
+				<input type="number" class="form-control" id="LeekDumpling" name="LeekDumpling" placeholder="0">
 			</div>
 			
 		</div>
 		<div class="row form-group">
 
-			<div class="col-md-1 d-flex flex-column justify-content-between">
+			<div class="col-md-1 col-lg-2 d-flex flex-column justify-content-between">
 				<label for="OvenRollSalad">燒餅夾生菜沙拉</label>
-				<input type="number" class="form-control" id="OvenRollSalad" placeholder="0">
+				<input type="number" class="form-control" id="OvenRollSalad" name="OvenRollSalad" placeholder="0">
 			</div>
-			<div class="col-md-1 d-flex flex-column justify-content-between">
+			<div class="col-md-1 col-lg-2 d-flex flex-column justify-content-between">
 				<label for="OvenRollSaladEgg">燒餅生菜沙拉夾蛋</label>
-				<input type="number" class="form-control" id="OvenRollSaladEgg" placeholder="0">
+				<input type="number" class="form-control" id="OvenRollSaladEgg" name="OvenRollSaladEgg" placeholder="0">
 			</div>
-			<div class="col-md-1 d-flex flex-column justify-content-between">
+			<div class="col-md-1 col-lg-2 d-flex flex-column justify-content-between">
 				<label for="SteamedBun">饅頭</label>
-				<input type="number" class="form-control" id="SteamedBun" placeholder="0">
+				<input type="number" class="form-control" id="SteamedBun" name="SteamedBun" placeholder="0">
 			</div>
-			<div class="col-md-1 d-flex flex-column justify-content-between">
+			<div class="col-md-1 col-lg-2 d-flex flex-column justify-content-between">
 				<label for="FriedEgg">荷包蛋</label>
-				<input type="number" class="form-control" id="FriedEgg" placeholder="0">
+				<input type="number" class="form-control" id="FriedEgg" name="FriedEgg" placeholder="0">
 			</div>
-			<div class="col-md-1 d-flex flex-column justify-content-between">
+			<div class="col-md-1 col-lg-2 d-flex flex-column justify-content-between">
 				<label for="GreenOnionEgg">蔥蛋</label>
-				<input type="number" class="form-control" id="GreenOnionEgg" placeholder="0">
+				<input type="number" class="form-control" id="GreenOnionEgg" name="GreenOnionEgg" placeholder="0">
 			</div>
 		</div>
+		<input type="submit" value="送出" id="customer_submit">
 	</form>
 
 </body>
